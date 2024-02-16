@@ -4,8 +4,6 @@ on:
       - main
     paths:
       - 'dir-1'
-    paths-ignore:
-      - 'dir-2'
 
 jobs:
   Explore-GitHub-Actions:
