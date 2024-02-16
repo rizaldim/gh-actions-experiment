@@ -4,6 +4,7 @@ on:
       - main
     paths:
       - 'dir-1/**'
+      - '.github/**'
 
 jobs:
   Explore-GitHub-Actions:
@@ -20,3 +21,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "github.path: ${{ github.path }}"
+      - run: echo "github.event_path: ${{ github.event_path }}"
