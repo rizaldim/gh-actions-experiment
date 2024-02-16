@@ -3,7 +3,7 @@ on:
     branches:
       - main
     paths:
-      - 'dir-1'
+      - 'dir-1/**'
 
 jobs:
   Explore-GitHub-Actions:
