@@ -25,5 +25,5 @@ jobs:
       - run: echo "github path ${{ github.path }}"
       - run: echo "github event_path ${{ github.event_path }}"
 
-      - run: echo "event: ${{ github.event }}"
+      - run: echo "event: ${{ toJson(github.event) }}"
 
