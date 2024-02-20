@@ -7,9 +7,11 @@ jobs:
     environment: prod
     steps:
       - run: echo ${{ vars.A }}
+      - run: echo ${{ secrets.B }}
 
   stg:
     runs-on: ubuntu-latest
     environment: stg
     steps:
       - run: echo ${{ vars.A }}
+      - run: echo ${{ secrets.B }}
