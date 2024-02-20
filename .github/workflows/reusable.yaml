@@ -16,4 +16,3 @@ jobs:
     environment: stg
     steps:
       - run: echo $A
-
