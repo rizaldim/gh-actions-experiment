@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: prod
     steps:
-      - run: echo ${{ vars.A }}
+      - run: echo $A
 
   stg:
     runs-on: ubuntu-latest
     environment: stg
     steps:
-      - run: echo ${{ vars.A }}
+      - run: echo $A
 
