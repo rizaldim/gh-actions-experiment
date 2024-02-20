@@ -1,6 +1,9 @@
 on:
   workflow_call:
 
+env:
+  A: ${{ vars.A }}
+
 jobs:
   prod:
     runs-on: ubuntu-latest
