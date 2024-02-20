@@ -1,18 +1,15 @@
 on:
   workflow_call:
 
-env:
-  A: ${{ vars.A }}
-
 jobs:
   prod:
     runs-on: ubuntu-latest
     environment: prod
     steps:
-      - run: echo $A
+      - run: echo ${{ vars.A }}
 
   stg:
     runs-on: ubuntu-latest
     environment: stg
     steps:
-      - run: echo $A
+      - run: echo ${{ vars.A }}
